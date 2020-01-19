@@ -1,11 +1,10 @@
 import React, {useEffect} from "react";
-import { askForPermissioToReceiveNotifications } from "./firebaseConfig";
+import { preguntarPermisos } from "./firebaseConfig";
 
 function App() {
 
   useEffect(() => {
-    console.log("use effect")
-    askForPermissioToReceiveNotifications()
+    preguntarPermisos()
   }, [])
     return (
         <div>Haz click en Permitir, para recibir notificaciones </div>

@@ -1,6 +1,6 @@
 import firebase from "firebase";
 
-export const initializeFirebase = () => {
+export const inicializarFirebase = () => {
     firebase.initializeApp({
         apiKey: "AIzaSyAfE4XX4g7YennzibFrYqmcwJfExlRKAzw",
         authDomain: "serverless-d0a19.firebaseapp.com",
@@ -13,7 +13,7 @@ export const initializeFirebase = () => {
     });
 };
 
-export const askForPermissioToReceiveNotifications = async () => {
+export const preguntarPermisos = async () => {
     try {
         const messaging = firebase.messaging();
 
